@@ -17,6 +17,13 @@ public final class HealthNumberOverlay {
 
     @SubscribeEvent
     public static void onOverlayPre(RenderGuiOverlayEvent.Pre event) {
+        // Esconde a camada de armadura vanilla (ícones acima da barra de vida).
+        if (event.getOverlay() == VanillaGuiOverlay.ARMOR_LEVEL.type()) {
+            event.setCanceled(true);
+            return;
+        }
+
+        // Substitui somente os corações pela indicação numérica.
         if (event.getOverlay() != VanillaGuiOverlay.PLAYER_HEALTH.type()) {
             return;
         }
@@ -27,8 +34,6 @@ public final class HealthNumberOverlay {
             return;
         }
 
-        // Remove apenas a barra de corações vanilla. A camada de armadura
-        // continua sendo desenhada normalmente pelo Minecraft, acima da vida.
         event.setCanceled(true);
 
         float health = player.getHealth();
@@ -44,8 +49,6 @@ public final class HealthNumberOverlay {
         GuiGraphics graphics = event.getGuiGraphics();
         int x = 10;
         int y = event.getWindow().getGuiScaledHeight() - 39;
-
-        // Sombra para manter a leitura em cenários claros ou escuros.
         graphics.drawString(minecraft.font, value, x, y, color, true);
     }
 }

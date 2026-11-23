@@ -3,9 +3,9 @@
 Addon independente (ID `coracoesnumero`) para **Minecraft Java 1.20.1 + Forge 47.x**, pensado para o NarutoTo 0.4.1.
 
 ## O que altera
-- Cancela somente a camada vanilla de corações.
-- Mostra a vida como `vida atual/vida máxima` (por exemplo, `20/20`).
-- Mantém a camada original de armadura do Minecraft sem alterá-la. A armadura continua acima da indicação numérica de vida.
+- Cancela a camada vanilla de corações e mostra a vida como `vida atual/vida máxima` (por exemplo, `20/20`).
+- Cancela também a camada vanilla `ARMOR_LEVEL`, removendo os ícones de armadura da parte superior da HUD.
+- Não altera a barra de chakra, inventário ou outros elementos do NarutoTo.
 
 ## Instalação
 Este pacote é o **projeto-fonte**, não um `.jar` pronto. Para gerar o mod:
@@ -15,8 +15,4 @@ Este pacote é o **projeto-fonte**, não um `.jar` pronto. Para gerar o mod:
 4. Coloque o `.jar` compilado na pasta `mods` junto do NarutoTo 0.4.1 e Forge 1.20.1.
 
 ## Observação
-O addon não modifica nem substitui o arquivo original `narutoto-0_4_1-forge`. Teste em uma cópia do mundo primeiro.
-
-
-## Correção do erro de metadados
-O ID declarado em `mods.toml` e no registro `@Mod` é `coracoesnumero`. Remova o JAR antigo da pasta `mods` antes de instalar o JAR recompilado deste projeto.
+O addon não modifica nem substitui o arquivo original `narutoto-0_4_1-forge`. Teste em uma cópia do mundo primeiro. Remova versões antigas deste addon da pasta `mods` antes de instalar o JAR recompilado.
