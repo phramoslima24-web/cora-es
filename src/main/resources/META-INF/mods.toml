@@ -3,21 +3,20 @@ loaderVersion="[47,)"
 license="MIT"
 
 [[mods]]
-modId="coracoesnumero"
+modId="narutoto_hud_numerica"
 version="1.0.0"
-displayName="Coracoes Numero"
-description='Esconde os coracoes da HUD e mostra so o numero de coracoes restantes.'
-
-[[dependencies.coracoesnumero]]
+displayName="Narutoto HUD Numérica"
+authors="Addon independente"
+description='''Substitui os corações da HUD por vida numérica e mantém a armadura do Minecraft acima.'''
+[[dependencies.narutoto_hud_numerica]]
 modId="forge"
 mandatory=true
 versionRange="[47,)"
 ordering="NONE"
 side="CLIENT"
-
-[[dependencies.coracoesnumero]]
+[[dependencies.narutoto_hud_numerica]]
 modId="minecraft"
 mandatory=true
-versionRange="[1.20.1,1.21)"
+versionRange="[1.20.1,1.20.2)"
 ordering="NONE"
 side="CLIENT"
