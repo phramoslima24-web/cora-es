@@ -1,6 +1,6 @@
 # Narutoto HUD Numérica
 
-Addon independente para **Minecraft Java 1.20.1 + Forge 47.x**, pensado para o NarutoTo 0.4.1.
+Addon independente (ID `coracoesnumero`) para **Minecraft Java 1.20.1 + Forge 47.x**, pensado para o NarutoTo 0.4.1.
 
 ## O que altera
 - Cancela somente a camada vanilla de corações.
@@ -16,3 +16,7 @@ Este pacote é o **projeto-fonte**, não um `.jar` pronto. Para gerar o mod:
 
 ## Observação
 O addon não modifica nem substitui o arquivo original `narutoto-0_4_1-forge`. Teste em uma cópia do mundo primeiro.
+
+
+## Correção do erro de metadados
+O ID declarado em `mods.toml` e no registro `@Mod` é `coracoesnumero`. Remova o JAR antigo da pasta `mods` antes de instalar o JAR recompilado deste projeto.

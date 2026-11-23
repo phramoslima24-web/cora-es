@@ -7,7 +7,7 @@ plugins {
 
 group = 'br.addons.narutoto'
 version = '1.0.0'
-archivesBaseName = 'narutoto-hud-numerica'
+archivesBaseName = 'naruto-hud-numerica'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
